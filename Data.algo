@@ -1,0 +1,48 @@
+ALGORITHM distinct
+VAR
+   
+    j,i,sd:integer;
+    t: ARRAY_OF INTEGER [4];
+    u : ARRAY_OF INTEGER[4]; 
+   found:BOOLEAN;
+BEGIN
+  
+ write("donner le nombre d'element de la tableau t");
+ read(N);
+
+  
+  write("donner le nombre d'element de la tableau u");
+ read(M);
+
+
+ FOR i FROM 0 TO N STEP 1  DO
+ write("donner N ",i);
+ read(t[i]);
+ END_FOR
+
+
+
+ FOR j FROM 0 TO M STEP 1  DO
+ write("donner M ",i);
+ read(u[j]);
+ END_FOR
+
+ 
+ 
+ FOR i FROM 0 TO N STEP 1  DO
+    found:=false;
+    FOR j FROM 0 TO M STEP 1  DO
+   
+        IF (T[i] = u[j]) THEN
+                found:=true;
+                break;
+        END_IF
+    END_FOR
+    IF (NOT found) THEN
+        sd=sd+t[i];
+    END_IF
+END_FOR
+
+
+ 
+END

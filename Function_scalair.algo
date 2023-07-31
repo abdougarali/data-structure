@@ -1,0 +1,46 @@
+
+
+PROCEDURE produit scalair (T,v):INTEGER;
+    VAR i:integer;
+        ps:integer ;
+        
+    BEGIN
+
+     
+     IF (t.length<>v.length) THEN
+        ps:=NAN;
+     END_IF 
+
+        ps:=0;
+       FOR i FROM 0 TO N STEP 1  DO
+        ps:=ps+T[i]*V[i];
+       
+       END_FOR
+       return ps;
+    END
+
+
+
+BEGIN
+
+ n1:=read_size();
+ read_array(n1,t)
+
+
+ n1:=read_size();
+ read_array(n1,t)
+
+
+    
+ produit scalair(t,v);
+
+  IF (ps=0) THEN
+            write("les deux vecteure sont orthogonaux");
+
+    ELSE
+
+            write("les deux vecteur ne sont pas orthogonaux");
+            
+  END_IF
+
+ END
